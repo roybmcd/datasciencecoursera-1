@@ -31,5 +31,3 @@ Lines 34 to 48 replace the activity numbers with their actual names.
 Line 54 creates the tidy data set that complies with the requirements at Step 5.
 
 Line 56 writes the previously created data set to a .txt file names Step5.
-
-

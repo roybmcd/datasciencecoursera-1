@@ -47,7 +47,7 @@ for (i in 1:dim(mean_std)[1]){
     }
 }
 
-## 5. Using data from step 4, create second, tidy dataset containing average of each variable, for each activity and each subject
+## 5. Using data from previous step, create second, tidy dataset containing average of each variable, for each activity and each subject
 
 #create factors for data
 

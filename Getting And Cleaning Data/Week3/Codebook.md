@@ -18,14 +18,21 @@ The newly created dataset contains the means of all selected datapoints (descrip
 
 - The data is represented in 2 different domains, time domain (prefixed with t) and frequency domain (prefixed with f).
 
-- There is also three types of information about the data: accelerations (Acc), jerk movements (Jerk) and magnitude (Mag) as identified within the column names.
+- Each signal either represents a force on the body (Body) or from gravity (Gravity).
 
-- Each signal either represents a force on the body (Body) or from gravity (Grav).
+- The reading comes from an accelerometer (ACC) or gyroscope (Gyro)
+
+- There is also two types of information about the data: jerk movements (Jerk) and magnitude (Mag).
 
 - Each column represents either a mean (mean) or standard deviation (std) of their respective variable.
 
-The following data types are thus obtained:   
-Note: '-XYZ' is used to denote signals in the X, Y and Z directions.
+- '-XYZ' is used to denote signals in the X, Y and Z directions.
+
+__The key to reading the column name is then:__
+
+(t/f)(Body/Gravity)(Acc/Gyro)(Jerk and/or Mag).(mean/std/meanFreq)...(X/Y/Z)
+
+__The following data types are thus obtained:__   
 
 "tBodyAcc.mean...X"              
  [4] "tBodyAcc.mean...Y"               "tBodyAcc.mean...Z"               "tBodyAcc.std...X"               
